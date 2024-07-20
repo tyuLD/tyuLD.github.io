@@ -1,10 +1,5 @@
 /* Reset some basic elements */
-body,
-h1,
-h2,
-p,
-ul,
-li {
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -72,7 +67,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 /* About section styling */
 .about-container {
     display: flex;
@@ -80,23 +74,15 @@ footer {
 }
 
 .about-img {
-    max-width: 400px;
-    /* 調整圖片的寬度 */
-    margin-right: 20px;
-    /* 與文字之間的間距 */
-    border-radius: 50%;
-    /* 如果你希望圖片是圓形的 */
+    max-width: 400px; /* 調整圖片的寬度 */
+    margin-right: 20px; /* 與文字之間的間距 */
+    border-radius: 50%; /* 如果你希望圖片是圓形的 */
 }
-
 .n-img {
-    max-width: 65px;
-    /* 調整圖片的寬度 */
-    margin-right: 20px;
-    /* 與文字之間的間距 */
-    border-radius: 50%;
-    /* 如果你希望圖片是圓形的 */
+    max-width: 65px; /* 調整圖片的寬度 */
+    margin-right: 20px; /* 與文字之間的間距 */
+    border-radius: 50%; /* 如果你希望圖片是圓形的 */
 }
-
 /* 調整文字在關於我部分的樣式 */
 #about p {
     flex: 1;
