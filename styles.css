@@ -1,5 +1,10 @@
 /* Reset some basic elements */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,13 +15,16 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* Header styling */
 header {
+    position: fixed;
+    width: 100%;
     background: #333;
     color: #fff;
+    margin-top: -20px;
     padding: 10px 0;
     text-align: center;
 }
@@ -59,31 +67,90 @@ h2 {
 
 /* Footer styling */
 footer {
-    text-align: center;
+
     padding: 10px 0;
     background: #333;
     color: #fff;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
+    font-size: 20px;
 }
+
 /* About section styling */
 .about-container {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    font-size: 30px;
 }
 
 .about-img {
-    max-width: 400px; /* 調整圖片的寬度 */
-    margin-right: 20px; /* 與文字之間的間距 */
-    border-radius: 50%; /* 如果你希望圖片是圓形的 */
+    text-align: right;
+    max-width: 400px;
+    /* 調整圖片的寬度 */
+    margin-right: 20px;
+    /* 與文字之間的間距 */
+    /* border-radius: 50%; */
+    /* 如果你希望圖片是圓形的 */
 }
+
 .n-img {
-    max-width: 65px; /* 調整圖片的寬度 */
-    margin-right: 20px; /* 與文字之間的間距 */
-    border-radius: 50%; /* 如果你希望圖片是圓形的 */
+    max-width: 30px;
+    /* 調整圖片的寬度 */
+    margin-right: 20px;
+    /* 與文字之間的間距 */
+    border-radius: 50%;
+    float: right;
+    /* 如果你希望圖片是圓形的 */
 }
+
 /* 調整文字在關於我部分的樣式 */
 #about p {
     flex: 1;
+}
+
+
+.container {
+    /* border-radius: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+}
+
+.container div {
+    /* border: 1px solid rgb(202, 201, 201); */
+    padding: 10px;
+    width: 100px;
+    font-size: 30px;
+}
+
+.box-1 {
+    flex: 1;
+}
+
+.box-2 {
+    flex: 1;
+}
+
+.box-3 {
+    flex: 1;
+}
+
+.banner {
+    padding-top: 250px;
+    width: 100%;
+    height: 650px;
+    background-image: url("背景2.jpg");
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.quote {
+    /* background-repeat: no-repeat; */
+    width: 50%;
+    margin: 0 auto;
+    font-size: 50px;
+    color: white;
+    padding-left: 20px;
+    border-left: 10px solid #fff;
 }

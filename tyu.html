@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1>歡迎來到tyu的網站</h1>
+        <h1>tyu的網站</h1>
         <nav>
             <ul>
                 <li><a href="#home">首頁</a></li>
@@ -20,41 +20,47 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="home">
-            <h2>首頁</h2>
-            <p>目前就讀海洋大學資訊工程學系，目前會的程式為C++，正在學習如何做Web，喜歡打遊戲、打排球、聽音樂、看動漫。</p>
-        </section>
-        <section id="about">
-            <h2>關於我</h2>
-            <div class="about-container">
-                <img src="皮卡丘.jpg" alt="我的圖片" class="about-img">
-                <p>一隻在吃披薩的皮卡丘</p>
+        <div class="banner" id="home">
+            <div class="quote">
+                <p>歡迎來到tyu的網站</p>
             </div>
+        </div>
+
+        <!-- <section id="about"> -->
+        <div class="about-container" style="margin-bottom: 30px;">
+            <img src="皮卡丘.jpg" alt="我的圖片" class="about-img">
+            <p>王鈞宇(tyu)<br>目前就讀海洋大學資訊工程學系，是一個喜歡看動漫、打遊戲的人，立志成為一個軟體工程師，早早財富自由。</p>
+        </div>
+        <!-- </section> -->
+        <section id="about-part2" style="border-radius: 10%;">
+            <div class="container">
+                <div class="box-1">
+                    <h3>Ability</h3>
+                    <p>目前會的程式語言為C++</p>
+                </div>
+                <div class="box-2">
+                    <h3>Hobby</h3>
+                    <p>打遊戲、打排球、聽音樂、看動漫</p>
+                </div>
+                <div class="box-3">
+                    <h3>Now</h3>
+                    <p>目前在學習建設Web網站</p>
+                </div>
+            </div>
+
         </section>
         <section id="contact">
             <h2>聯繫我</h2>
             <p>這是聯繫我的方式。</p>
-            <table>
-                <tr>
-                    <td><img src="dc圖.png" class="n-img"></td>
-                    <td><a href="https://www.facebook.com/profile.php?id=100001683722664"><img src="fb圖.png"
-                                class="n-img"></a></td>
-                    <td><a href="https://www.instagram.com/ibp4000/"><img src="Instagram_logo_2016.svg.webp"
-                                class="n-img"></a></td>
-                    <td><a href="https://github.com/tyuLD"><img src="下載.jpg" class="n-img"></a></td>
-                </tr>
-                <tr>
-                    <td>Discord</td>
-                    <td>Facebook</td>
-                    <td>Instagram</td>
-                    <td>Github</td>
-                </tr>
-            </table>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024</p>
+        <p style="display: inline;">&copy; 2024</p>
+        <a href="https://www.facebook.com/profile.php?id=100001683722664"><img src="fb圖.png" class="n-img"></a>
+        <a href="https://www.instagram.com/ibp4000/"><img src="Instagram_logo_2016.svg.webp" class="n-img"></a>
+        <a href="https://github.com/tyuLD"><img src="下載.jpg" class="n-img"></a>
     </footer>
 </body>
 
