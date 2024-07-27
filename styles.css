@@ -80,13 +80,25 @@ footer {
 /* About section styling */
 .about-container {
     display: flex;
+    width: 100%;
+    height: 300px;
     /* align-items: flex-start; */
+    /* font-size: 30px; */
+}
+
+.about-container p {
+    text-align: left;
     font-size: 30px;
+}
+
+.about-container h3 {
+    font-size: 35px;
 }
 
 .about-img {
     text-align: right;
     max-width: 400px;
+    aspect-ratio: 16/9;
     /* 調整圖片的寬度 */
     margin-right: 20px;
     /* 與文字之間的間距 */
@@ -105,8 +117,9 @@ footer {
 }
 
 /* 調整文字在關於我部分的樣式 */
-#about p {
-    flex: 1;
+.container h3,
+p {
+    text-align: center;
 }
 
 
@@ -137,20 +150,25 @@ footer {
 }
 
 .banner {
-    padding-top: 250px;
+    padding-top: 15%;
     width: 100%;
-    height: 650px;
+    height: 500px;
+    aspect-ratio: 16/9;
+    display: block;
     background-image: url("背景2.jpg");
     background-size: cover;
-    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    margin-bottom: 150px;
 }
 
 .quote {
-    /* background-repeat: no-repeat; */
+
     width: 50%;
     margin: 0 auto;
     font-size: 50px;
     color: white;
-    padding-left: 20px;
-    border-left: 10px solid #fff;
+    /* padding-left: 20px; */
+    /* border-left: 10px solid #fff; */
 }
