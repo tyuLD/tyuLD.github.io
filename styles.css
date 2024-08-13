@@ -1,30 +1,31 @@
 /* Reset some basic elements */
 body,
 h1,
-h2,
-p,
-ul,
-li {
+h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling for body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    /* display: flex; */
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    /* min-height: 100vh; */
+    /* font-family: Arial, sans-serif;
+    line-height: 1.6; */
+    background-color: #333;
     /* padding: 20px; */
 }
 
-/* Header styling */
 header {
     position: fixed;
+    top: 0;
     width: 100%;
+    /* height: 100hv; */
     background: #333;
     color: #fff;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     padding: 10px 0;
     text-align: center;
 }
@@ -48,33 +49,99 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main content styling */
-main {
-    margin: 20px 0;
-}
-
-section {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-/* Footer styling */
-footer {
-
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    /* position: fixed; */
-    bottom: 0;
+.container-sticky {
+    position: relative;
     width: 100%;
-    font-size: 20px;
+}
+
+.banner {
+    /* padding-top: 15%; */
+    position: sticky;
+    top: 0;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("sky-6811874_1920.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width:600px) {
+        padding-top: 15%;
+        position: sticky;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("sky-6811874_1920.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.quote {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px; */
+    /* background: #000; */
+
+}
+
+
+
+main {
+    /* margin: 20px 0; */
+}
+
+
+.title-p {
+    position: relative;
+    font-family: sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 70px;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    animation: animate-title 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .1);
+}
+
+@keyframes animate-title {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+
+.bg1 {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("cosmos-1866820_1920.jpg");
+    /* background: #000; */
 }
 
 /* About section styling */
@@ -82,6 +149,7 @@ footer {
     display: flex;
     width: 100%;
     height: 300px;
+    margin: 0px 20px 0px 20px;
     /* align-items: flex-start; */
     /* font-size: 30px; */
 }
@@ -89,6 +157,8 @@ footer {
 .about-container p {
     text-align: left;
     font-size: 30px;
+    color: #fff;
+    margin-top: -10px;
 
     @media (max-width:600px) {
         font-size: 10px;
@@ -96,7 +166,9 @@ footer {
 }
 
 .about-container h3 {
-    font-size: 35px;
+    font-size: 40px;
+    color: #fff;
+    margin-top: -10px;
 
     @media (max-width:600px) {
         font-size: 20px;
@@ -107,51 +179,59 @@ footer {
     text-align: right;
     max-width: 400px;
     aspect-ratio: 16/9;
-    /* 調整圖片的寬度 */
     margin-right: 20px;
 
-    /* 與文字之間的間距 */
-    /* border-radius: 50%; */
-    /* 如果你希望圖片是圓形的 */
     @media (max-width:600px) {
         text-align: right;
         width: 80;
         height: 100px;
         aspect-ratio: 16/9;
-        /* 調整圖片的寬度 */
         margin-right: 20px;
     }
 }
 
-.n-img {
-    max-width: 30px;
-    /* 調整圖片的寬度 */
-    margin-right: 20px;
-    /* 與文字之間的間距 */
-    border-radius: 50%;
-    float: right;
-
+.bg2 {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 100%; */
+    height: 100vh;
+    /* background: yellow; */
+    background: url("landscape-1192669_1920.jpg");
 }
 
-/* 調整文字在關於我部分的樣式 */
-
-
+#about {
+    margin: 250px 20px 0px 20px;
+    background: #fff;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    border-radius: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .container {
-    /* border-radius: 50%; */
     display: flex;
     flex-wrap: wrap;
-    /* background-color: yellow; */
 }
 
 .container div {
     /* border: 1px solid rgb(202, 201, 201); */
     padding: 10px;
-    width: 100px;
+    margin: 20px;
+    /* width: 100%; */
+    /* height: 200px; */
     font-size: 30px;
+    text-align: center;
 
     @media (max-width:600px) {
         font-size: 10px;
+        text-align: center;
     }
 }
 
@@ -167,40 +247,108 @@ footer {
     flex: 1;
 }
 
-.banner {
-    padding-top: 15%;
-    width: 100%;
-    height: 500px;
-    aspect-ratio: 16/9;
-    display: block;
-    background-image: url("背景2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
-    margin-bottom: 150px;
 
-    @media (max-width:600px) {
-        padding-top: 15%;
-        width: 100%;
-        height: 200px;
-        aspect-ratio: 16/9;
-        display: block;
-        background-image: url("背景2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-bottom-left-radius: 50% 10%;
-        border-bottom-right-radius: 50% 10%;
-        margin-bottom: 50px;
+footer {
+    background: #3586ff;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 3em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1100px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 1000;
+    opacity: 0.5;
+    bottom: 0;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 1000;
+    opacity: 0.7;
+    bottom: 0;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
     }
 }
 
-.quote {
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
 
-    width: 50%;
-    margin: 0 auto;
-    font-size: 50px;
-    color: white;
-    /* padding-left: 20px; */
-    /* border-left: 10px solid #fff; */
+    100% {
+        background-position-x: 1000px;
+    }
 }

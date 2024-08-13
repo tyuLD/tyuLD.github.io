@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <!-- <script src="style-js.js"></script>  -->
     <header>
         <h1>tyu的網站</h1>
         <nav>
@@ -22,44 +22,64 @@
     </header>
 
     <main>
-        <div class="banner" id="home">
-            <div class="quote">
-                <p>歡迎來到tyu的網站</p>
+        <div class="container-sticky">
+            <div class="banner" id="home">
+                <div class="quote">
+                    <p class="title-p">歡迎來到tyu的網站</p>
+                </div>
             </div>
-        </div>
 
-        <!-- <section id="about"> -->
-        <div class="about-container" style="margin-bottom: 30px;">
-            <img src="皮卡丘.jpg" alt="我的圖片" class="about-img">
-            <div>
-                <h3>王鈞宇(tyu)</h3>
-                <p>目前就讀海洋大學資訊工程學系，是一個喜歡看動漫、打遊戲的人，立志成為一個軟體工程師，早早財富自由。</p>
-            </div>
+            <!-- <section id="about"> -->
+            <section class="bg1">
+                <div class="about-container" style="margin-bottom: 30px;">
+                    <img src="皮卡丘.jpg" alt="我的圖片" class="about-img">
+                    <div>
+                        <h3>王鈞宇(tyu)</h3>
+                        <p>目前就讀海洋大學資訊工程學系，是一個喜歡看動漫、打遊戲的人，立志成為一個軟體工程師，早早財富自由。</p>
+                    </div>
+                </div>
+            </section>
+            <!-- </section> -->
+            <section class="bg2">
+                <section id="about" style="border-radius: 10%;">
+                    <div class="container">
+                        <div class="box-1">
+                            <h3>Ability</h3>
+                            <p>目前會的程式語言為C++</p>
+                        </div>
+                        <div class="box-2">
+                            <h3>Hobby</h3>
+                            <p>打遊戲、打排球、聽音樂、看動漫</p>
+                        </div>
+                        <div class="box-3">
+                            <h3>Now</h3>
+                            <p>目前在學習建設Web網站</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
         </div>
-        <!-- </section> -->
-        <section id="about" style="border-radius: 10%;">
-            <div class="container">
-                <div class="box-1">
-                    <h3>Ability</h3>
-                    <p>目前會的程式語言為C++</p>
-                </div>
-                <div class="box-2">
-                    <h3>Hobby</h3>
-                    <p>打遊戲、打排球、聽音樂、看動漫</p>
-                </div>
-                <div class="box-3">
-                    <h3>Now</h3>
-                    <p>目前在學習建設Web網站</p>
-                </div>
-            </div>
-        </section>
     </main>
     <footer>
-        <p style="display: inline;">&copy; 2024</p>
-        <a href="https://www.facebook.com/profile.php?id=100001683722664"><img src="fb圖.png" class="n-img"></a>
-        <a href="https://www.instagram.com/ibp4000/"><img src="Instagram_logo_2016.svg.webp" class="n-img"></a>
-        <a href="https://github.com/tyuLD"><img src="下載.jpg" class="n-img"></a>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/profile.php?id=100001683722664"><ion-icon
+                        name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/ibp4000/"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li> <a href="https://github.com/tyuLD"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+
+        <p> @2024 tyu的網站</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
