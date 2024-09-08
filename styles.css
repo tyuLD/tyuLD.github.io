@@ -1,4 +1,3 @@
-/* Reset some basic elements */
 body,
 h1,
 h2 {
@@ -8,14 +7,10 @@ h2 {
 }
 
 body {
-    /* display: flex; */
-    /* justify-content: flex-end;
-    align-items: flex-end; */
-    /* min-height: 100vh; */
-    /* font-family: Arial, sans-serif;
-    line-height: 1.6; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #333;
-    /* padding: 20px; */
 }
 
 header {
@@ -49,33 +44,28 @@ nav ul li a {
     text-decoration: none;
 }
 
-.container-sticky {
-    position: relative;
-    width: 100%;
-}
-
-.banner {
-    /* padding-top: 15%; */
-    position: sticky;
-    top: 0;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.index-bg {
     width: 100%;
     height: 100vh;
-    background-image: url("sky-6811874_1920.jpg");
-
+    display: grid;
     background-size: cover;
+    background-position: center;
+    place-content: center;
+    background-attachment: fixed;
+}
+
+.bg0 {
+    top: 0;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("sky-6811874_1920.jpg");
+    /* background-size: cover; */
     background-repeat: no-repeat;
 
     @media (max-width:600px) {
         padding-top: 15%;
-        position: sticky;
         top: 0;
-        margin: 0;
-        padding: 0;
-        display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -86,28 +76,17 @@ nav ul li a {
 }
 
 .quote {
-
+    font-size: 9rem;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 500px; */
-    /* background: #000; */
-
 }
-
-
-
-/* main {
-    margin: 20px 0;
-} */
-
 
 .title-p {
     position: relative;
     font-family: sans-serif;
-    /* text-transform: uppercase; */
     font-size: 70px;
     text-align: center;
     overflow: hidden;
@@ -132,16 +111,9 @@ nav ul li a {
 
 
 .bg1 {
-    position: sticky;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background: url("cosmos-1866820_1920.jpg");
-    /* background: #000; */
 }
 
 /* About section styling */
@@ -197,29 +169,11 @@ nav ul li a {
 }
 
 .bg2 {
-    position: sticky;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* width: 100%; */
-    height: 100vh;
-    /* background: yellow; */
+    background-size: cover;
     background: url("landscape-1192669_1920.jpg");
 }
 
-#about {
-    margin: 250px 20px 0px 20px;
-    /* background: #fff; */
-    position: relative;
-    justify-content: center;
-    width: 100%;
-    height: 40vh;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 .container {
     display: flex;
@@ -239,14 +193,14 @@ nav ul li a {
     /* border: 1px solid rgb(202, 201, 201); */
     padding: 10px;
     margin: 10px;
-    border-radius: 15%;
+    border-radius: 15px;
     background-color: #fff;
     font-size: 30px;
     text-align: center;
 
     @media (max-width:600px) {
         font-size: 10px;
-        border-radius: 15%;
+        border-radius: 15px;
         background-color: #fff;
         text-align: center;
         font-size: 15px;
